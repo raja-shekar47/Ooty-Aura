@@ -1,7 +1,8 @@
 import React from "react";
+import AllPost from "./AllPost";
 
 const Home = () => {
-  return <h1>Welcome to Home Page</h1>;
+  return <AllPost />;
 };
 
 export default Home;
