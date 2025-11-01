@@ -8,7 +8,7 @@ const PageLayout = () => {
   return (
     <div className="dashboard-layout">
       <Sidebar />
-      <main className="main-content">
+      <main className="main-content w-full">
         <Outlet /> {/* Nested pages will render here */}
       </main>
     </div>
