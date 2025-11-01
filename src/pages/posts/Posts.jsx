@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import AddPost from "./AddPost";
 import DisplayPost from "./DisplayPost";
 
 const Posts = () => {
   const [title, setTitle] = useState();
+  const [image, setImage] = useState();
+  
+  console.log("image 1", image)
   return (
     <div>
-      <AddPost setTitle={setTitle} title={title} />
-      <DisplayPost title={title} />
+      <AddPost setTitle={setTitle} setImage={setImage} />
+      <DisplayPost title={title} image={image} />
     </div>
   );
 };

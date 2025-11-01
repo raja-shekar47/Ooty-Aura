@@ -1,10 +1,17 @@
 import React from "react";
 
-const DisplayPost = ({ title }) => {
+const DisplayPost = ({ title, image }) => {
   return (
-    <div>
-      <h1>All Post</h1>
+    <div className="flex flex-col items-center">
       <h2>{title}</h2>
+      {/* Preview (optional) */}
+      {image && (
+        <img
+          src={URL.createObjectURL(image)}
+          alt="Preview"
+          className="w-40 h-40 object-cover rounded-md mt-2"
+        />
+      )}
     </div>
   );
 };
